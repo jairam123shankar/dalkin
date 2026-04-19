@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suitecase5]">
+  <test thread-count="5" name="testcase5(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testngcase.invaliddetailsdemo">
+        <methods>
+          <include name="lwieip"/>
+          <include name="lwveip"/>
+        </methods>
+      </class> <!-- testngcase.invaliddetailsdemo -->
+    </classes>
+  </test> <!-- testcase5(failed) -->
+</suite> <!-- Failed suite [suitecase5] -->

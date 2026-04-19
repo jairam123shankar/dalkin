@@ -1,0 +1,12 @@
+<suite name="Suite1">
+    <listeners>
+        <listener class-name="listener.Mylistener"/>
+    </listeners>
+    <test name="Test1">  <!-- Added name attribute -->
+        <classes>
+            <class name="qafoxpage.login"/>
+            <class name="qafoxpage.loginfordatadriven"/>
+            <class name="qafoxpage.registerdatadriven1"/>
+        </classes>
+    </test>
+</suite>

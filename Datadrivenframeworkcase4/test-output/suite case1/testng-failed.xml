@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite case1]">
+  <test thread-count="5" name="test case1(failed)">
+    <classes>
+      <class name="frameworkproperties.z1">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginwvc"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- frameworkproperties.z1 -->
+    </classes>
+  </test> <!-- test case1(failed) -->
+</suite> <!-- Failed suite [suite case1] -->

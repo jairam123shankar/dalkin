@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite1</th></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">6</td><td class="num attn">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">84,850</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">qafoxpage.loginfordatadriven</td><td><a href="#m0">loginusing_validcredentials</a></td><td rowspan="1">1758001787952</td><td rowspan="1">21829</td></tr><tr><th colspan="4">Test1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">qafoxpage.registerdatadriven1</td><td><a href="#m1">case1</a></td><td rowspan="4">1758001819703</td><td rowspan="4">4</td></tr><tr class="skippedeven"><td><a href="#m2">case1</a></td></tr><tr class="skippedeven"><td><a href="#m3">case1</a></td></tr><tr class="skippedeven"><td><a href="#m4">case1</a></td></tr><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">qafoxpage.login</td><td><a href="#m5">loginusing_validcredentials</a></td><td rowspan="1">1758001744602</td><td rowspan="1">3029</td></tr><tr class="passedeven"><td><a href="#m6">loginusing_validemailinvalidpassword</a></td><td rowspan="1">1758001751735</td><td rowspan="1">3357</td></tr><tr class="passedeven"><td><a href="#m7">withoutentering_Details</a></td><td rowspan="1">1758001759420</td><td rowspan="1">2348</td></tr><tr class="passedodd"><td rowspan="3">qafoxpage.loginfordatadriven</td><td><a href="#m8">loginusing_validcredentials</a></td><td rowspan="3">1758001812445</td><td rowspan="3">6783</td></tr><tr class="passedodd"><td><a href="#m9">loginusing_validcredentials</a></td></tr><tr class="passedodd"><td><a href="#m10">loginusing_validcredentials</a></td></tr></tbody>
+</table>
+<h2>Test1</h2><h3 id="m0">qafoxpage.loginfordatadriven#loginusing_validcredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Runmode=Y, ExpectedResult=Failure, Username=amotooricap9@gmail.com, Browser=Chrome, Password=1.23456789E9}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [37302ff9764130ef45d4f45b8d904430, findElement {value=Logout, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\kusuma\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54532/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37302ff9764130ef45d4f45b8d904430
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at Pages.Loginsuccesspage.check_Logoutmessage(Loginsuccesspage.java:19)
+	at qafoxpage.loginfordatadriven.loginusing_validcredentials(loginfordatadriven.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">qafoxpage.registerdatadriven1#case1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Email=autogenerate, ExpectedResult=Success, Telephone=1.234567891E9, FirstName=Google, PasswordConfirm=12345.0, Runmode=N, LastName=Pichai, Browser=Chrome, Password=12345.0}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: We can&apos;t able to run the file as the run mode is N
+	at qafoxpage.registerdatadriven1.case1(registerdatadriven1.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">qafoxpage.registerdatadriven1#case1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Email=autogenerate, ExpectedResult=Success, Telephone=1.234567892E9, FirstName=Microsoft, PasswordConfirm=12345.0, Runmode=N, LastName=Nadella, Browser=Firefox, Password=12345.0}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: We can&apos;t able to run the file as the run mode is N
+	at qafoxpage.registerdatadriven1.case1(registerdatadriven1.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">qafoxpage.registerdatadriven1#case1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Email=autogenerate, ExpectedResult=Success, Telephone=1.23456789E9, FirstName=Kishore, PasswordConfirm=12345.0, Runmode=Y, LastName=Ravi, Browser=Firefox, Password=12345.0}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: We can&apos;t able to run the file as the run mode is N
+	at qafoxpage.registerdatadriven1.case1(registerdatadriven1.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">qafoxpage.registerdatadriven1#case1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Email=autogenerate, ExpectedResult=Success, Telephone=1.234567893E9, FirstName=Facebook, PasswordConfirm=12345.0, Runmode=Y, LastName=Zukerburg, Browser=Chrome, Password=12345.0}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: We can&apos;t able to run the file as the run mode is N
+	at qafoxpage.registerdatadriven1.case1(registerdatadriven1.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">qafoxpage.login#loginusing_validcredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">qafoxpage.login#loginusing_validemailinvalidpassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">qafoxpage.login#withoutentering_Details</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">qafoxpage.loginfordatadriven#loginusing_validcredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Runmode=Y, ExpectedResult=Success, Username=tranm143@gmail.com, Browser=Edge, Password=Policy@096}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">qafoxpage.loginfordatadriven#loginusing_validcredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Runmode=Y, ExpectedResult=Success, Username=jai789t@gmail.com, Browser=Firefox, Password=Candyjai@69}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">qafoxpage.loginfordatadriven#loginusing_validcredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Runmode=Y, ExpectedResult=Success, Username=jai123@gmail.com, Browser=Edge, Password=Candyjai@63}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
